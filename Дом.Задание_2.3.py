@@ -1,5 +1,11 @@
 month = int(input("Введите номер месяца: "))
-if 2<month<6:
+if month<3: 
+    print("Зима")
+    if month == 1:
+        print("Январь")
+    elif month == 2:
+        print("Февраль")
+elif 2<month<6:
     print("Весна")
     if month == 3:
         print("Март")
@@ -13,18 +19,13 @@ elif 5<month<9:
     elif month == 7:
         print("Июль")
     else: print("Август")
-elif 8<month<12:
+elif month>8:
     print("Осень")
     if month == 9:
         print("Сентябрь")
     elif month == 10:
         print("Октябрь")
-    else: print("Ноябрь")
-elif 11<month<3: 
-    print("Зима")
-    if month == 1:
-        print("Январь")
-    elif month == 2:
-        print("Февраль")
+    elif month == 11:
+        print("Ноябрь")
     else: print("Декабрь")
 else: print("Ошибка, такого месяца нет")
