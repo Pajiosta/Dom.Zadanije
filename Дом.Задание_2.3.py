@@ -3,8 +3,7 @@ if month<3:
     print("Зима")
     if month == 1:
         print("Январь")
-    elif month == 2:
-        print("Февраль")
+    else: print("Февраль")
 elif 2<month<6:
     print("Весна")
     if month == 3:
